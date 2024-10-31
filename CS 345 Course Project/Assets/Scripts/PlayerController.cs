@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
-        if(Input.GetKeyDown(KeyCode.R))
+        if(Input.GetKeyDown(KeyCode.R) && grounded)
         {
             rb.gravityScale *= -1;
             jumpForce *= -1;
