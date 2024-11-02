@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     public float speed = 5f;
     public float jumpForce = 3f;
     private bool grounded = true;
-    private bool switchingGravity = false;
     private Animator animator;
 
     private void Awake() 
@@ -43,12 +42,11 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
-        if(Input.GetKeyDown(KeyCode.R))
+        if(Input.GetKeyDown(KeyCode.R) && grounded)
         {
             rb.gravityScale *= -1;
             jumpForce *= -1;
             grounded = false;
-            switchingGravity = true;
         }
 
         animator.SetBool("isRunning", horizontalInput != 0);
@@ -66,7 +64,6 @@ public class PlayerController : MonoBehaviour
         if(collision.gameObject.CompareTag("platform"))
         {
             grounded = true;
-            switchingGravity = false;
             animator.SetBool("isGrounded", true);
         }
     }
