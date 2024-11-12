@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: afb47a6e644b84d399d2aa217716213e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 467
+        width: 48
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4905d6c4e6c0441b3bcc6d3b413a93a4
+      internalID: -628111479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_1
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 453
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e518776d3a5e45c88390656f4598e6c
+      internalID: 450827585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_2
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 440
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d989a2d7cf84461db83a301ed341f8e
+      internalID: 1907938042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_3
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 422
+        width: 59
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf8d5842b58b46589787714ea6254d2
+      internalID: -1916977777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 221
+        width: 54
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5f5f7a16aad420cbb898d787ea483c
+      internalID: 274136924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 191
+        width: 58
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f53687cea6344d5920fe216c8a1f48
+      internalID: -206126492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 193
+        width: 56
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5815bbfc59f4823a39add1268e9555
+      internalID: -560370825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_7
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 194
+        width: 56
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e85e59d4efa9407c82a9e4e4e865739
+      internalID: 1195605849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_8
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 29
+        width: 52
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37459363d69be44619fd86b889ef239e
+      internalID: 1819459103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 27
+        width: 38
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c85a89969294de5848bae693b7e1fa
+      internalID: -1275026662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_10
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 28
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35dfc85e150254547a4ac3083f516b42
+      internalID: 244826886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_11
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 25
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da6cca65fc19443eb8bf8d04a3889b0
+      internalID: -591552422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_0: -628111479
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_1: 450827585
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_10: 244826886
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_11: -591552422
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_2: 1907938042
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_3: -1916977777
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_4: 274136924
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_5: -206126492
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_6: -560370825
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_7: 1195605849
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_8: 1819459103
+      cartoon-lightning-sprite-animation-effect-game-ui_8071-53964_9: -1275026662
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
