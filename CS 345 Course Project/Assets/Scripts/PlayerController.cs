@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private bool grounded = true;
     private Animator animator;
     public bool reversePower = false;
+    private Vector2 screenBounds;
+    private float playerHalfWidth;
 
     public int level = 0;
 
@@ -22,12 +24,18 @@ public class PlayerController : MonoBehaviour
         {
             reversePower = true;
         }
+        screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
+        playerHalfWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
     }
 
     private void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
+        float clampedX = Mathf.Clamp(transform.position.x, -screenBounds.x + playerHalfWidth, screenBounds.x - playerHalfWidth);
+        Vector2 pos = transform.position;
+        pos.x = clampedX;
+        transform.position = pos;
 
         if(horizontalInput > 0.01f)
         {
@@ -66,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("platform"))
+        if(collision.gameObject.CompareTag("platform") || collision.gameObject.CompareTag("movable"))
         {
             grounded = true;
             animator.SetBool("isGrounded", true);
