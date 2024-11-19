@@ -95,6 +95,12 @@ public class PlayerController : MonoBehaviour
         {
             keyItemCollected = true;
             Destroy(other.gameObject);
+
+        } 
+        else if (other.CompareTag("KeyItem") && other.gameObject.activeSelf)
+        {
+            other.gameObject.SetActive(false);
         }
+        
     }
 }
