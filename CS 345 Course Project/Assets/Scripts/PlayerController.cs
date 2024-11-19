@@ -13,8 +13,9 @@ public class PlayerController : MonoBehaviour
     public bool reversePower = false;
     private Vector2 screenBounds;
     private float playerHalfWidth;
-
     public int level = 0;
+
+    public bool keyItemCollected = false;
 
     private void Awake() 
     {
@@ -86,5 +87,14 @@ public class PlayerController : MonoBehaviour
         rb.gravityScale *= -1;
         jumpForce *= -1;
         grounded = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("collectible"))
+        {
+            keyItemCollected = true;
+            Destroy(other.gameObject);
+        }
     }
 }
