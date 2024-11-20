@@ -820,7 +820,7 @@ Transform:
   m_GameObject: {fileID: 170954533}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.45, y: -3.71, z: 0}
+  m_LocalPosition: {x: -8.459, y: -3.728, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4537,6 +4537,22 @@ PrefabInstance:
     - target: {fileID: 3809264751493660019, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
       propertyPath: m_Name
       value: LevelCompleteCollider
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218030325568247398, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
+      propertyPath: m_Size.x
+      value: 0.41219622
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218030325568247398, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9776087
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218030325568247398, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.5420852
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218030325568247398, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.01119566
       objectReference: {fileID: 0}
     - target: {fileID: 6696535259638144400, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
       propertyPath: m_LocalScale.x

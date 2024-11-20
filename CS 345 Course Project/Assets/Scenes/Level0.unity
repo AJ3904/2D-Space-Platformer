@@ -208,6 +208,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCompleteCollider
       objectReference: {fileID: 0}
+    - target: {fileID: 6218030325568247398, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
+      propertyPath: m_Size.x
+      value: 0.35455817
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218030325568247398, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0692363
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218030325568247398, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.56950676
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218030325568247398, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0034618378
+      objectReference: {fileID: 0}
     - target: {fileID: 6696535259638144400, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.43537977
@@ -345,7 +361,7 @@ MonoBehaviour:
   jumpForce: 12
   reversePower: 0
   level: 0
-  keyItemCollected: 0
+  keyItemCollected: 1
 --- !u!50 &170954536
 Rigidbody2D:
   serializedVersion: 4
@@ -693,7 +709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dacde39c132c5a4db968f666206039b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 170954534}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
