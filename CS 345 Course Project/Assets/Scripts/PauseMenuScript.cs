@@ -48,4 +48,10 @@ public class PauseMenuScript : MonoBehaviour
         Resume();
         SceneManager.LoadScene(0);
     }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Resume();
+    }
 }

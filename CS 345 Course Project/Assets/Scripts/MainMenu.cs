@@ -10,6 +10,21 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void LoadLevelOne()
+    {
+        HitPlay();
+    }
+
+    public void LoadLevelTwo()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
+
+    public void LoadLevelThree()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+    }
+
     public void ExitGame()
     {
         Debug.Log("Pressed Exit");
