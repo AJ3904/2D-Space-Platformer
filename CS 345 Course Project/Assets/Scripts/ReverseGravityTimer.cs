@@ -5,7 +5,7 @@ using UnityEngine;
 public class ReverseGravityTimer : MonoBehaviour
 {
     private float timeForNextSwitch;
-    public float reversedGravityDuration = 15.0f;
+    public float reversedGravityDuration = 5.0f;
     public PlayerController player;
 
     void Start()
@@ -17,6 +17,7 @@ public class ReverseGravityTimer : MonoBehaviour
         timeForNextSwitch += Time.deltaTime;
         if(timeForNextSwitch >= reversedGravityDuration) {
             ReverseGravityOfObjects();
+            reversedGravityDuration = Random.Range(2.0f, 6.0f);
             timeForNextSwitch -= reversedGravityDuration;
         }
     }
