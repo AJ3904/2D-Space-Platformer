@@ -5554,6 +5554,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 513371829131974392, guid: 0220c30bd28ff5b44bf20757d49eface, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1721575850182970802, guid: 0220c30bd28ff5b44bf20757d49eface, type: 3}
       propertyPath: Player
       value: 
@@ -5562,6 +5566,10 @@ PrefabInstance:
       propertyPath: startPoint
       value: 
       objectReference: {fileID: 1759722827}
+    - target: {fileID: 2436271198552026294, guid: 0220c30bd28ff5b44bf20757d49eface, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4504406462494564253, guid: 0220c30bd28ff5b44bf20757d49eface, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.3083792

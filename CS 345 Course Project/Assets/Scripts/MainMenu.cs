@@ -28,6 +28,12 @@ public class MainMenu : MonoBehaviour
     public void ExitGame()
     {
         Debug.Log("Pressed Exit");
+        PlayerPrefs.DeleteAll();
         Application.Quit();
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }

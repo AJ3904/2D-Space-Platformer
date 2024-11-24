@@ -5,15 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class LevelCompleteScript : MonoBehaviour
 {
+    public int nextLevel;
+    private void Start() 
+    {
+        nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             SceneManager.LoadScene(0);
         } 
         else 
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(nextLevel);
+            if(nextLevel > PlayerPrefs.GetInt("levelAt"))
+            {
+                PlayerPrefs.SetInt("levelAt", nextLevel - 1);
+            }
         }
     }
 }
