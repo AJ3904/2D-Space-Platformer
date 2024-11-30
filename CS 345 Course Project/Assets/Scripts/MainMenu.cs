@@ -36,4 +36,21 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
+
+    public void LoadAnimation()
+    {
+        if(Utils.GetBool("0"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else 
+        {
+            SceneManager.LoadScene(5);
+        }
+    }
+
+    public void LoadTutorial()
+    {
+        SceneManager.LoadScene(2);
+    }
 }

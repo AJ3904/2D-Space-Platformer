@@ -204,6 +204,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 900488913493941714, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
+      propertyPath: levelNumber
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3809264751493660019, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
       propertyPath: m_Name
       value: LevelCompleteCollider

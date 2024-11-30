@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class LevelCompleteScript : MonoBehaviour
 {
-    public int nextLevel;
+    private int nextLevel;
+    public string levelNumber;
     private void Start() 
     {
         nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Utils.SetBool(levelNumber, true);
         if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             SceneManager.LoadScene(0);
