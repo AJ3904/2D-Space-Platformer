@@ -45,7 +45,7 @@ public class MainMenu : MonoBehaviour
         }
         else 
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(6);
         }
     }
 
