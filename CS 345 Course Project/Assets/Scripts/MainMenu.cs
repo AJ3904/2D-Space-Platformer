@@ -45,12 +45,12 @@ public class MainMenu : MonoBehaviour
         }
         else 
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(5);
         }
     }
 
     public void LoadTutorial()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(6);
     }
 }

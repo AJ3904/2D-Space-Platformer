@@ -14,9 +14,13 @@ public class LevelCompleteScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Utils.SetBool(levelNumber, true);
-        if (SceneManager.GetActiveScene().buildIndex == 5)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             SceneManager.LoadScene(0);
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 6)
+        {
+            SceneManager.LoadScene(1);
         } 
         else 
         {
