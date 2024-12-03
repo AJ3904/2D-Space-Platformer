@@ -17,7 +17,7 @@ public class ReverseGravityTimer : MonoBehaviour
         timeForNextSwitch += Time.deltaTime;
         if(timeForNextSwitch >= reversedGravityDuration) {
             ReverseGravityOfObjects();
-            reversedGravityDuration = Random.Range(2.0f, 6.0f);
+            reversedGravityDuration = Random.Range(4.0f, 6.0f);
             timeForNextSwitch -= reversedGravityDuration;
         }
     }
