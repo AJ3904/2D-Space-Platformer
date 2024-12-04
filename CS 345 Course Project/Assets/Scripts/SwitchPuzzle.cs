@@ -12,13 +12,14 @@ public class SwitchPuzzle : MonoBehaviour
     [SerializeField]
     private Animator[] lightAnimator;
     public List<int> keysPressed;
-    private readonly int[] passcode = { 3, 2, 4, 1 };
+    private int[] passcode = { 3, 2, 4, 1 };
     private bool puzzleSolved;
 
     void Start()
     {
         keysPressed = new List<int>();
         puzzleSolved = false;
+        setPassword(passcode);
     }
 
     // Call this method when a switch is pressed
@@ -72,5 +73,16 @@ public class SwitchPuzzle : MonoBehaviour
     {
         puzzleSolved = true;
         movingPlatforms.active = true;
+    }
+
+    private void setPassword(int[] passcode)
+    {
+        for (int t = 0; t < passcode.Length; t++ )
+        {
+            int tmp = passcode[t];
+            int r = UnityEngine.Random.Range(t, passcode.Length);
+            passcode[t] = passcode[r];
+            passcode[r] = tmp;
+        }
     }
 }
