@@ -8,6 +8,7 @@ public class MovingPlatforms : MonoBehaviour
     public float speed;
     public int startingPoint;
     public Transform[] positions;
+
     // Start is called before the first frame update
     void Start()
     {
