@@ -842,6 +842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 170954534}
+  doorOpenClip: {fileID: 8300000, guid: 9093a3582e9074e25831f9d006304c47, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
