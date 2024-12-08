@@ -13,14 +13,6 @@ public class AnimatedText : MonoBehaviour
     [SerializeField]
     private float dialogueSpeed = 0.01f;
 
-    public AudioClip textScrollClip;
-    private AudioSource sciFiAudioSource;
-
-    void Start(){
-        sciFiAudioSource = gameObject.AddComponent<AudioSource>();
-        sciFiAudioSource.loop = false; 
-    }
-
     void NextSentence()
     {
         if(index < sentences.Length)
@@ -43,12 +35,6 @@ public class AnimatedText : MonoBehaviour
         foreach(char character in sentences[index].ToCharArray())
         {
             dialogueText.text += character;
-
-            if (textScrollClip != null && sciFiAudioSource != null)
-            {
-                sciFiAudioSource.PlayOneShot(textScrollClip);
-            }
-
             yield return new WaitForSeconds(dialogueSpeed);
         }
         index++;

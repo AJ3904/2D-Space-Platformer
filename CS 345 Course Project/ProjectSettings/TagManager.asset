@@ -8,6 +8,7 @@ TagManager:
   - movable
   - collectible
   - KeyItem
+  - bgm
   layers:
   - Default
   - TransparentFX
