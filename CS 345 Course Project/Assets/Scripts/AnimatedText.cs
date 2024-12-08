@@ -13,15 +13,16 @@ public class AnimatedText : MonoBehaviour
     [SerializeField]
     private float dialogueSpeed = 0.01f;
 
-    public AudioClip textScrollClip;
+    public AudioClip textScrollClip; // Audio during text scroll
+    public AudioClip countdownEndClip; // Audio when countdown stops
+
     private AudioSource textAudioSource;
 
     void Start()
     {
         // Initialize the audio source
         textAudioSource = gameObject.AddComponent<AudioSource>();
-        textAudioSource.clip = textScrollClip;
-        textAudioSource.loop = true; // Ensure the clip loops while text is being written
+        textAudioSource.loop = false; // Ensure it doesn't loop
         textAudioSource.playOnAwake = false; // Prevent audio from playing immediately
     }
 
@@ -39,7 +40,7 @@ public class AnimatedText : MonoBehaviour
         }
         else
         {
-            animator.SetTrigger("Darken");
+            StartCoroutine(PlayCountdownEndAndTriggerAnimation());
         }
     }
 
@@ -48,6 +49,7 @@ public class AnimatedText : MonoBehaviour
         // Start the audio when writing begins
         if (textAudioSource != null && textScrollClip != null)
         {
+            textAudioSource.clip = textScrollClip;
             textAudioSource.Play();
         }
 
@@ -67,7 +69,23 @@ public class AnimatedText : MonoBehaviour
         NextSentence();
     }
 
-    void LoadTutorial()
+    IEnumerator PlayCountdownEndAndTriggerAnimation()
+    {
+        // Play the countdown end clip
+        if (countdownEndClip != null && textAudioSource != null)
+        {
+            textAudioSource.clip = countdownEndClip;
+            textAudioSource.Play();
+
+            // Wait for the audio clip to finish before continuing
+            yield return new WaitForSeconds(textAudioSource.clip.length);
+        }
+
+        // Trigger the animator to darken the screen
+        animator.SetTrigger("Darken");
+    }
+
+    public void LoadTutorial() // Called by the animation event or other triggers
     {
         SceneManager.LoadScene("level0");
     }

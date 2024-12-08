@@ -1229,6 +1229,8 @@ MonoBehaviour:
   - 5
   animator: {fileID: 1763290400}
   dialogueSpeed: 0.1
+  textScrollClip: {fileID: 8300000, guid: f9adec99b1fe9486989496bdfe777d52, type: 3}
+  countdownEndClip: {fileID: 8300000, guid: 9093a3582e9074e25831f9d006304c47, type: 3}
 --- !u!1 &2102682662
 GameObject:
   m_ObjectHideFlags: 0
