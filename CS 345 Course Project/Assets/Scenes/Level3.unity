@@ -509,6 +509,7 @@ GameObject:
   - component: {fileID: 170954539}
   - component: {fileID: 170954540}
   - component: {fileID: 170954541}
+  - component: {fileID: 170954542}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -728,6 +729,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.40902615, y: 0.6411426}
   m_EdgeRadius: 0
+--- !u!114 &170954542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170954533}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44f7a3c569f190945ab510ce063c0274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 170954537}
+  deadSprite: {fileID: 0}
+  GameOverUI: {fileID: 374152578}
 --- !u!1 &210973823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,6 +1414,14 @@ PrefabInstance:
     - target: {fileID: 6271016654091399514, guid: efa145a9a8decf8498dc3294fa88274f, type: 3}
       propertyPath: m_Name
       value: GameOverScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6566674286357412390, guid: efa145a9a8decf8498dc3294fa88274f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8921543
+      objectReference: {fileID: 0}
+    - target: {fileID: 6566674286357412390, guid: efa145a9a8decf8498dc3294fa88274f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.93602926
       objectReference: {fileID: 0}
     - target: {fileID: 6912796371175174465, guid: efa145a9a8decf8498dc3294fa88274f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

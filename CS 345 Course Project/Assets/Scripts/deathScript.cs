@@ -17,9 +17,7 @@ public class deathScript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player")){
-            Destroy(other.gameObject);
-            GameOverUI.SetActive(true);
-            Time.timeScale = 0f;
+            other.gameObject.GetComponent<DeathAnimation>().enabled = true;
         }
     }
 
