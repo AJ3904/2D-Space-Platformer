@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class OxygenBar : MonoBehaviour
 {
     private float maxOxygen = 150f;
     public float currentOxygen;
-    // Start is called before the first frame update
+    public Slider slider;
+
     void Start()
     {
         currentOxygen = maxOxygen;
@@ -20,10 +22,13 @@ public class OxygenBar : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
     }
 
     void loseOxygen()
     {
         currentOxygen -= 1;
+        slider.value = currentOxygen;
     }
+
 }
