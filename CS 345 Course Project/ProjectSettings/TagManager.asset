@@ -9,6 +9,7 @@ TagManager:
   - collectible
   - KeyItem
   - bgm
+  - pauseMusic
   layers:
   - Default
   - TransparentFX
