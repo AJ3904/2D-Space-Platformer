@@ -77,10 +77,12 @@ public class AnimatedText : MonoBehaviour
             textAudioSource.clip = countdownEndClip;
             textAudioSource.Play();
 
-            animator.SetTrigger("Darken");
             // Wait for the audio clip to finish before continuing
-            yield return new WaitForSeconds(7.0f);
+            yield return new WaitForSeconds(textAudioSource.clip.length);
         }
+
+        // Trigger the animator to darken the screen
+        animator.SetTrigger("Darken");
     }
 
     public void LoadTutorial() // Called by the animation event or other triggers
