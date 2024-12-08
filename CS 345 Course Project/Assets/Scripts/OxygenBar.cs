@@ -6,13 +6,14 @@ using UnityEngine.UI;
 
 public class OxygenBar : MonoBehaviour
 {
-    private float maxOxygen = 150f;
+    private float maxOxygen = 100f;
     public float currentOxygen;
     public Slider slider;
 
     void Start()
     {
         currentOxygen = maxOxygen;
+        slider.value = maxOxygen;
         InvokeRepeating("loseOxygen", 1f, 1f);
     }
 
