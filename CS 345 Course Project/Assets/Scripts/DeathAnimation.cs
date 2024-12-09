@@ -6,6 +6,8 @@ public class DeathAnimation : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Sprite deadSprite;
     public GameObject GameOverUI;
+    public AudioClip deathSound;  // Reference to the death sound
+    private AudioSource audioSource; // Reference to AudioSource
 
     private void Reset()
     {
@@ -14,6 +16,9 @@ public class DeathAnimation : MonoBehaviour
 
     private void OnEnable()
     {
+        // Get the AudioSource component
+        audioSource = GetComponent<AudioSource>();
+
         UpdateSprite();
         DisablePhysics();
         StartCoroutine(Animate());
@@ -53,14 +58,21 @@ public class DeathAnimation : MonoBehaviour
 
     private IEnumerator Animate()
     {
+        // Play the death sound once
+        if (deathSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(deathSound);
+        }
+
         float elapsed = 0f;
-        float duration = 1f;
+        float duration = 2f;  // Increased duration for the animation (adjust to your needs)
 
         float jumpVelocity = 10f;
         float gravity = -36f;
 
         Vector3 velocity = Vector3.up * jumpVelocity;
 
+        // Perform the animation while the duration is not reached
         while (elapsed < duration)
         {
             transform.position += velocity * Time.deltaTime;
@@ -68,9 +80,16 @@ public class DeathAnimation : MonoBehaviour
             elapsed += Time.deltaTime;
             yield return null;
         }
+
+        // Ensure the audio finishes playing before moving on (optional)
+        while (audioSource.isPlaying)
+        {
+            yield return null; // Wait until the audio is done
+        }
+
         Destroy(this.gameObject);
         GameOverUI.SetActive(true);
         Time.timeScale = 0f;
     }
-
 }
+
