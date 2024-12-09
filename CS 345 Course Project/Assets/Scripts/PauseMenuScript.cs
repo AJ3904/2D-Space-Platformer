@@ -10,6 +10,9 @@ public class PauseMenuScript : MonoBehaviour
 
     private AudioSource backgroundMusic; // Reference to the music AudioSource
 
+    [SerializeField]
+    private AudioSource gameBackgroundMusic;
+
     void Start()
     {
         pauseMenuUI.SetActive(false);
@@ -54,6 +57,7 @@ public class PauseMenuScript : MonoBehaviour
         if (backgroundMusic != null && backgroundMusic.isPlaying)
         {
             backgroundMusic.Stop();
+            gameBackgroundMusic.Play();
         }
     }
 
@@ -66,6 +70,7 @@ public class PauseMenuScript : MonoBehaviour
         // Play background music
         if (backgroundMusic != null && !backgroundMusic.isPlaying)
         {
+            gameBackgroundMusic.Pause();
             backgroundMusic.Play();
         }
     }
