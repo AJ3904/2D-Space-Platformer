@@ -2039,6 +2039,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &436113083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 140091042514043051, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+  m_PrefabInstance: {fileID: 1328425624}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &482816823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4697,9 +4702,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 106954209964998339, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 1160061905}
     - target: {fileID: 4132841563619302822, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
       propertyPath: m_Name
       value: LevelCompleteScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132841563619302822, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130875925984797307, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130875925984797307, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130875925984797307, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130875925984797307, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130875925984797307, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 55.142456
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130875925984797307, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130875925984797307, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9215337910416603186, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
       propertyPath: m_Pivot.x
@@ -4731,6 +4772,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9215337910416603186, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215337910416603186, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215337910416603186, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215337910416603186, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9215337910416603186, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
@@ -4786,11 +4839,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
---- !u!1 &1328425625 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4132841563619302822, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
-  m_PrefabInstance: {fileID: 1328425624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1334588463 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9168060589487047403, guid: efa145a9a8decf8498dc3294fa88274f, type: 3}
@@ -5653,7 +5701,11 @@ PrefabInstance:
     - target: {fileID: 900488913493941714, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
       propertyPath: completeMenu
       value: 
-      objectReference: {fileID: 1328425625}
+      objectReference: {fileID: 436113083}
+    - target: {fileID: 900488913493941714, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 1160061905}
     - target: {fileID: 3809264751493660019, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
       propertyPath: m_Name
       value: LevelCompleteCollider
@@ -7166,3 +7218,4 @@ SceneRoots:
   - {fileID: 1750565640}
   - {fileID: 172542912}
   - {fileID: 1160061906}
+  - {fileID: 1328425624}

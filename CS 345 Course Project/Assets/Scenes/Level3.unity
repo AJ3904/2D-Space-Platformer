@@ -1218,9 +1218,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 106954209964998339, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 1931324838}
+    - target: {fileID: 1143141946269462938, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_text
+      value: Thanks for fixing the ship, Engineer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923527096905516311, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 89
+      objectReference: {fileID: 0}
     - target: {fileID: 4132841563619302822, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
       propertyPath: m_Name
       value: LevelCompleteScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747181856902913023, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9215337910416603186, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
       propertyPath: m_Pivot.x
@@ -1303,15 +1319,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3041058931919227657, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
---- !u!1 &260574907 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4132841563619302822, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
-  m_PrefabInstance: {fileID: 260574906}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &262641233
 GameObject:
   m_ObjectHideFlags: 0
@@ -6266,12 +6278,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 900488913493941714, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
       propertyPath: levelNumber
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 900488913493941714, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
       propertyPath: completeMenu
       value: 
-      objectReference: {fileID: 260574907}
+      objectReference: {fileID: 2030357476}
+    - target: {fileID: 900488913493941714, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 1931324838}
     - target: {fileID: 3809264751493660019, guid: 37435c3208c52c740a1443a179885dd8, type: 3}
       propertyPath: m_Name
       value: LevelCompleteCollider
@@ -7309,6 +7325,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7253834729761266499, guid: 95df9be9a4d118843a70bb9f99dd5ed2, type: 3}
   m_PrefabInstance: {fileID: 825793321}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2030357476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 140091042514043051, guid: 8931ed9bcf7f1fa4299a58c6219e53da, type: 3}
+  m_PrefabInstance: {fileID: 260574906}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2033934403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7665,3 +7686,4 @@ SceneRoots:
   - {fileID: 374152576}
   - {fileID: 2105947057}
   - {fileID: 1931324839}
+  - {fileID: 260574906}

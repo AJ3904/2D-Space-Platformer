@@ -8,6 +8,8 @@ public class LevelCompleteScript : MonoBehaviour
     private int nextLevel;
     public string levelNumber;
     public GameObject completeMenu;
+    [SerializeField]
+    private AudioSource backgroundMusic;
 
     private void Start() 
     {
@@ -16,9 +18,10 @@ public class LevelCompleteScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Destroy(collision.gameObject);
         completeMenu.SetActive(true);
         Time.timeScale = 0f;
-        LoadNextLevel();
+        backgroundMusic.Stop();
     }
 
     public void LoadNextLevel()
@@ -32,7 +35,7 @@ public class LevelCompleteScript : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().buildIndex == 6)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         } 
         else 
         {
