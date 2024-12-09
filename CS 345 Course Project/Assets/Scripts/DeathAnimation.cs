@@ -68,7 +68,7 @@ public class DeathAnimation : MonoBehaviour
             elapsed += Time.deltaTime;
             yield return null;
         }
-
+        Destroy(this.gameObject);
         GameOverUI.SetActive(true);
         Time.timeScale = 0f;
     }

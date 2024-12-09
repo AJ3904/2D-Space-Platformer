@@ -1428,6 +1428,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5166471939236789355, guid: d9dc70cfdeacd7c44b19007383544611, type: 3}
+      propertyPath: m_TagString
+      value: pauseMusic
+      objectReference: {fileID: 0}
     - target: {fileID: 6372880123734872058, guid: d9dc70cfdeacd7c44b19007383544611, type: 3}
       propertyPath: m_Pivot.x
       value: 0
