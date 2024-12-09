@@ -8,6 +8,8 @@ public class DeathAnimation : MonoBehaviour
     public GameObject GameOverUI;
     public AudioClip deathSound;  // Reference to the death sound
     private AudioSource audioSource; // Reference to AudioSource
+    [SerializeField]
+    private AudioSource gameMusic;
 
     private void Reset()
     {
@@ -61,6 +63,7 @@ public class DeathAnimation : MonoBehaviour
         // Play the death sound once
         if (deathSound != null && audioSource != null)
         {
+            gameMusic.Stop();
             audioSource.PlayOneShot(deathSound);
         }
 
