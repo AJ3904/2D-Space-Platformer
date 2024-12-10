@@ -22,13 +22,13 @@ public class LevelCompleteScript : MonoBehaviour
         completeMenu.SetActive(true);
         Time.timeScale = 0f;
         backgroundMusic.Stop();
+        Utils.SetBool(levelNumber, true);
     }
 
     public void LoadNextLevel()
     {
         completeMenu.SetActive(false);
         Time.timeScale = 1f;
-        Utils.SetBool(levelNumber, true);
         if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             SceneManager.LoadScene(0);
