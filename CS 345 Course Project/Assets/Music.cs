@@ -5,8 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class Music : MonoBehaviour
 {
+    private static Music musicInstance;
     void Awake() {
         DontDestroyOnLoad(this.gameObject);
+
+        if(musicInstance == null)
+        {
+            musicInstance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     void Update() {
