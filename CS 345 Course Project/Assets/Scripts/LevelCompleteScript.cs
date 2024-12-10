@@ -23,6 +23,7 @@ public class LevelCompleteScript : MonoBehaviour
         Time.timeScale = 0f;
         backgroundMusic.Stop();
         Utils.SetBool(levelNumber, true);
+        Utils.SetInt("levelAt", int.Parse(levelNumber));
     }
 
     public void LoadNextLevel()

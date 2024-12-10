@@ -10,6 +10,7 @@ public class SceneSwapManager : MonoBehaviour
 
         if(!Utils.GetBool("0")) {
             Utils.SetBool("0", false);
+            Utils.SetInt("levelAt", 1);
         }
 
         if(!Utils.GetBool("1")) {

@@ -8,7 +8,7 @@ public class LevelSelection : MonoBehaviour
     public Button[] levelButtons;
     void Start()
     {
-        int levelAt = PlayerPrefs.GetInt("levelAt", 1);
+        int levelAt = Utils.GetInt("levelAt");
         for(int i = 0; i < levelButtons.Length; i++)
         {
             if(i + 1 > levelAt)
